@@ -1,0 +1,216 @@
+<!-- // 1. Input a String S, and check its length and if the length is greater than 4,
+truncate the input String and output the result -
+Input: Ice Output: Ice
+Input:Icecream Output:Icec... -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Truncate String
+        </title>
+    </head>
+    <body>
+        <button onclick="func1()" id="btn1">Click Here</button> 
+        <script type = "text/javascript">
+            function func1(){
+                str = prompt("enter any value");
+                n = str.length
+                console.log(n);
+                (n<=4)?window.alert(str):window.alert(str.substring(0,4))
+            }
+        </script>
+    </body>
+</html>
+<!-- 
+2. Input a String S with multiple words, and remove whitespaces and
+output the result -
+Input: “Hii Boy” Output: “HiiBoy”
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Remove blank spaces
+        </title>
+    </head>
+    <body>
+        <button onclick="func1()" id="btn1">Click Here</button> 
+        <script type = "text/javascript">
+            function func1(){
+                str = prompt("enter any value");
+                str.replace(/\s+/g, "");
+            }
+        </script>
+    </body>
+</html>
+
+<!-- 3. Input a String S with two words, and replace first word with second word
+and display the result -
+Input: “Hii Boy” Output: “Boy Hii” -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Replace words
+        </title>
+    </head>
+    <body>
+        <button onclick="func1()" id="btn1">Click Here</button> 
+        <script type = "text/javascript">
+            function func1(){
+                str = prompt("enter any value with two words");
+                n = str.split(" ");
+                window.alert(n[1]+" "+n[0]);
+            }
+        </script>
+    </body>
+</html>
+
+<!-- 4. Input a String S with a word, and replace character “a” with “x” and
+display the result -
+Input: “apple” Output: “xpple” -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Replace letters
+        </title>
+    </head>
+    <body>
+        <button onclick="func1()" id="btn1">Click Here</button> 
+        <script type = "text/javascript">
+            function func1(){
+                str = prompt("enter any value with two words");
+                n = str.replaceAll("a","x");
+                window.alert(n);
+            }
+        </script>
+    </body>
+</html>
+
+<!-- 5. What string method can be used to convert string into array ? -->
+
+<!-- Ans. Split -->
+
+<!-- 6. What string method can be used to check the occurrence of a specified text in a string? -->
+
+<!-- Ans. Search -->
+
+<!-- 7. How can you break a string to a newline in Javascript ? -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Break a String to a newline
+        </title>
+    </head>
+    <body>
+        <button onclick="func1()" id="btn1">Click Here</button> 
+        <script type = "text/javascript">
+            function func1(){
+                str = prompt("enter any value");
+                window.alert(str.replace(/\s+/g,"\n"))
+            }
+        </script>
+    </body>
+</html>
+
+<!-- 8. Write a Javascript function to test whether the first character of a string
+is lowercase. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Break a String to a newline
+        </title>
+    </head>
+    <body>
+        <button onclick="func1()" id="btn1">Click Here</button> 
+        <script type = "text/javascript">
+            function func1(){
+                str = prompt("enter any value");
+                window.alert((str[0]==str[0].toLowerCase())?"It is lowercase":"It is not lowercase")
+            }
+        </script>
+    </body>
+</html>
+
+<!-- 9. Give a correct verdict to users input if he enters "yes", "YES","Yes" ,etc
+(any combination) using string methods.
+How will you handle that ? -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Break a String to a newline
+        </title>
+    </head>
+    <body>
+        <button onclick="func1()" id="btn1">Click Here</button> 
+        <script type = "text/javascript">
+            function func1(){
+                str = prompt("enter any value");
+                window.alert((str.toLowerCase()=="yes")?"It is yes":"It is not yes")
+            }
+        </script>
+    </body>
+</html>
+
+<!-- 10. Given a String S, achieve following tasks
+a) Convert the String into upper case.
+b) Convert only the first character to uppercase.
+c) Convert the String into lower case.
+d) Break the string into two halves and swap them.
+e) Count the repeating characters.
+f) Reverse the string  -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Break a String to a newline
+        </title>
+    </head>
+    <body>
+        <button onclick="func1()">Convert the String into upper case</button><br><br> 
+        <button onclick="func2()">Convert only the first character to uppercase</button><br><br> 
+        <button onclick="func3()">Convert the String into lower case</button><br><br> 
+        <button onclick="func4()">Break the string into two halves and swap them</button><br><br> 
+        <button onclick="func5()">Count the repeating characters</button><br><br> 
+        <button onclick="func6()">Reverse the string</button><br><br> 
+        
+        <script type = "text/javascript">
+            function func1(){
+                str = prompt("enter any value");
+                window.alert(str.toUpperCase())
+            }
+            function func2(){
+                str = prompt("enter any value");
+                window.alert(str[0].toUpperCase()+str.slice(1))
+            }
+            function func3(){
+                str = prompt("enter any value");
+                window.alert(str.toLowerCase())
+            }
+            function func4(){
+                str = prompt("enter any value");
+                window.alert((str.toLowerCase()=="yes")?"It is yes":"It is not yes")
+            }
+            function func5(){
+                str = prompt("enter any value");
+                window.alert((str.toLowerCase()=="yes")?"It is yes":"It is not yes")
+            }
+            function func6(){
+                str = prompt("enter any value");
+                window.alert((str.toLowerCase()=="yes")?"It is yes":"It is not yes")
+            }
+        </script>
+    </body>
+</html>
